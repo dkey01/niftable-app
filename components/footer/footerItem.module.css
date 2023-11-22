@@ -1,0 +1,68 @@
+.mainContainer{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.titleContainer{
+    padding: 30px;
+}
+
+.title{
+    font-family: 'Monument Extended';
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.image{
+    width: 100%;
+}
+
+.description{
+    font-family: 'Satoshi';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    .description{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+}
+
+@media (max-width: 768px){
+    .image img{
+        width: 15rem;
+        border-radius: 0 6px 6px 0;
+    }
+    .titleContainer{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 375px){
+    .title{
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .mainContainer{
+        flex-direction: column;
+    }
+    .image img{
+        width: 16.7rem;
+        border-radius: 0 6px 0px 0;
+    }
+}

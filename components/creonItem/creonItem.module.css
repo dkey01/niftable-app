@@ -1,0 +1,102 @@
+.button{
+    position: relative;
+    top: -10px;
+    left: 250px;
+    font-family: 'Satoshi';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+    background: #ffffff;
+    width: Hug (102px);
+    height: Hug (19px);
+    padding: 6px;
+    border-radius: 100px;
+    gap: 10px;
+}
+
+.titleContainer{
+    padding: 30px;
+}
+
+.title{
+    font-family: 'Monument Extended';
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.subTitle{
+    font-family: 'Satoshi';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image{
+    width: 90%;
+    height: auto;
+}
+
+.description{
+    font-family: 'Satoshi';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .subTitle{
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+    .description{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .button{
+        left: 155px;
+        font-size: 12px;
+        line-height: 13px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 768px){
+    .title{
+        line-height: 33.6px;
+    }
+    .subTitle{
+        line-height: 23.4px;
+    }
+    .description{
+        line-height: 20.8px;
+    }
+    .button{
+        left: 155px;
+        font-size: 12px;
+        line-height: 13.2px;
+        padding: 3px;
+    }
+    .titleContainer{
+        padding: 15px;
+    }
+}

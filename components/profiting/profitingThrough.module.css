@@ -1,0 +1,124 @@
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 130px 90px;
+}
+
+.title{
+    font-family: 'Monument Extended';
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.paragraph{
+    font-family: 'Monument Extended';
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: right;
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 60px;
+}
+
+.fullDetail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fullDetail img{
+    width: 65%;
+    height: auto;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    margin: 115px 0 0 65px;
+}
+
+.detail h4{
+    font-family: 'Satoshi';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+ .detail p{
+    font-family: 'Satoshi';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+ }
+
+ @media (max-width: 1024px){
+    .title{
+        font-size: 44px;
+        line-height: 48px;
+    }
+    .paragraph{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .detail h4{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .detail p{
+        font-size: 16px;
+        line-height: 21px;
+     }
+ }
+ 
+ @media (max-width: 768px){
+    .title{
+        line-height: 48.4px;
+    }
+    .paragraph{
+        line-height: 33.6px;
+    }
+    .detail h4{
+        line-height: 23.4px;
+    }
+    .detail p{
+        line-height: 20.8px;
+     }
+     .fullDetail{
+        display: flex;
+        flex-direction: column;
+    }
+    .fullDetail img{
+        width: 100%;
+    }
+    .detail{
+        margin: 55px 0 0 0px;
+    }
+ }
+ 
+ @media (max-width: 375px){
+    .title{
+        font-size: 32px;
+        line-height: 35.2px;
+    }
+    .paragraph{
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .mainContainer {
+        padding: 80px 30px;
+    }
+ }

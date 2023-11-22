@@ -1,0 +1,23 @@
+/* Monument Extended Regular */
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('/fonts/MonumentExtended-Regular.woff2') format('woff2');
+  }
+
+/* Satoshi Bold */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+}
+
+/* Satoshi Medium */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+}
+
+/* Satoshi Regular */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+}

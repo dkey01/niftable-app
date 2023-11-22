@@ -1,0 +1,171 @@
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  padding-top: 0.5rem;
+  margin-right: 3rem;
+}
+
+.button{
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: transparent;
+  width: 132px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-item a {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tokenButton,
+.revenueButton,
+.launchpadButton{
+  position: absolute;
+  background: #000000;
+  color: #AB23FF;
+  font-size: 7px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  border-radius: 100px;
+  border: none;
+  gap: 10px;
+}
+
+.tokenButton{
+  left: 823px;
+}
+
+.revenueButton{
+  left: 953px;
+}
+
+.launchpadButton{
+  left: 1100px;
+}
+  
+@media (max-width: 1024px) {
+
+  .tokenButton,
+  .revenueButton,
+  .launchpadButton{
+    background: #ffffff;
+    color: #AB23FF;
+    z-index: 1000;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 2rem 0 0 1rem;
+    text-align: left;
+  }
+
+  .nav-item a {
+    background-color: #000000;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .full-screen .navbar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh; 
+    background-color: #000000;
+    z-index: 100;
+  }
+
+  .menuScreen{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50rem;
+  }
+
+  .show-nav {
+    display: flex; 
+    flex-direction: column;
+    animation: fadeInRight 0.5s ease;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-nav.show-nav {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-content ul{
+    height: 14rem;
+    width: 17rem;
+    background-color: #000000;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .menuScreen{
+    width: 90%
+  }
+  .button{
+    width: 90px;
+  }
+  .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 14rem;
+  }
+}
